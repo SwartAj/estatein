@@ -1,8 +1,8 @@
-# Estatein — WordPress Theme Documentation
+# Estatein - WordPress Theme Documentation
 
 ## Overview
 
-Estatein is a fully custom WordPress theme built for a modern real estate company. The theme was developed from scratch using PHP, CSS, and JavaScript — without reliance on page builders — to demonstrate clean, maintainable WordPress development practices.
+Estatein is a fully custom WordPress theme built for a modern real estate company. The theme was developed from scratch using PHP, CSS, and JavaScript, without reliance on page builders, to demonstrate clean, maintainable WordPress development practices.
 
 ---
 
@@ -12,19 +12,19 @@ Estatein is a fully custom WordPress theme built for a modern real estate compan
 
 The theme follows standard WordPress template hierarchy:
 
-- `style.css` — Theme registration header
-- `functions.php` — Theme setup, asset enqueueing, Custom Post Types, taxonomies, ACF field registration, and helper functions
-- `header.php` / `footer.php` — Reusable site-wide header and footer
-- `front-page.php` — Home page template
-- `page-about.php` — About Us page (Template Name: About Us)
-- `page-properties.php` — Properties listing page (Template Name: Properties)
-- `page-services.php` — Services page (Template Name: Services)
-- `page-contact.php` — Contact page (Template Name: Contact)
-- `single-property.php` — Individual property detail page
-- `archive-property.php` — Property CPT archive
-- `404.php` — Error page
-- `assets/css/main.css` — All styles via CSS custom properties
-- `assets/js/main.js` — Vanilla JS for interactivity
+- `style.css` - Theme registration header
+- `functions.php` - Theme setup, asset enqueueing, Custom Post Types, taxonomies, ACF field registration, and helper functions
+- `header.php` / `footer.php` - Reusable site-wide header and footer
+- `front-page.php` - Home page template
+- `page-about.php` - About Us page (Template Name: About Us)
+- `page-properties.php` - Properties listing page (Template Name: Properties)
+- `page-services.php` - Services page (Template Name: Services)
+- `page-contact.php` - Contact page (Template Name: Contact)
+- `single-property.php` - Individual property detail page
+- `archive-property.php` - Property CPT archive
+- `404.php` - Error page
+- `assets/css/main.css` - All styles via CSS custom properties
+- `assets/js/main.js` - Vanilla JS for interactivity
 
 ### Design System
 
@@ -38,9 +38,9 @@ The design uses CSS custom properties (variables) defined in `:root`, making the
 
 Two CPTs were registered in `functions.php`:
 
-1. **Property** (`property`) — For all property listings, with a custom taxonomy for Property Type and Location
-2. **Team Member** (`team_member`) — For the About page team section
-3. **Testimonial** (`testimonial`) — For client testimonials displayed on the Home and About pages
+1. **Property** (`property`) - For all property listings, with a custom taxonomy for Property Type and Location
+2. **Team Member** (`team_member`) - For the About page team section
+3. **Testimonial** (`testimonial`) - For client testimonials displayed on the Home and About pages
 
 ### Advanced Custom Fields (ACF)
 
@@ -117,4 +117,4 @@ Contact and inquiry forms are built as custom HTML forms with:
 
 - All PHP output is sanitised and escaped to prevent XSS
 - The theme is compatible with WordPress 6.0+, PHP 8.0+
-- No jQuery dependency — all JavaScript is vanilla ES5 for maximum compatibility
+- No jQuery dependency - all JavaScript is vanilla ES5 for maximum compatibility

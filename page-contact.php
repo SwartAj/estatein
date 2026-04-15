@@ -236,17 +236,21 @@ get_header();
 
 <!-- Office Tabs JS -->
 <script>
-(function(){
+(function () {
     var tabs  = document.querySelectorAll('.offices-tab');
     var panes = document.querySelectorAll('.office-pane');
-    tabs.forEach(function(tab){
-        tab.addEventListener('click',function(){
+
+    tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
             var id = this.dataset.tab;
-            tabs.forEach(function(t){ t.classList.remove('active'); });
-            panes.forEach(function(p){ p.style.display='none'; });
+
+            tabs.forEach(function (t) { t.classList.remove('active'); });
+            panes.forEach(function (p) { p.style.display = 'none'; });
+
             this.classList.add('active');
+
             var pane = document.getElementById(id);
-            if(pane) pane.style.display='block';
+            if (pane) pane.style.display = 'block';
         });
     });
 })();

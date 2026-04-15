@@ -142,21 +142,109 @@ function estatein_acf_fields() {
         'key'    => 'group_property',
         'title'  => 'Property Details',
         'fields' => [
-            [ 'key' => 'field_price',        'label' => 'Price',              'name' => 'property_price',        'type' => 'text',      'instructions' => 'e.g. $1,280,000' ],
-            [ 'key' => 'field_location',     'label' => 'Location',           'name' => 'property_location_text','type' => 'text' ],
-            [ 'key' => 'field_bedrooms',     'label' => 'Bedrooms',           'name' => 'property_bedrooms',     'type' => 'number' ],
-            [ 'key' => 'field_bathrooms',    'label' => 'Bathrooms',          'name' => 'property_bathrooms',    'type' => 'number' ],
-            [ 'key' => 'field_area',         'label' => 'Area (Sq Ft)',       'name' => 'property_area',         'type' => 'text' ],
-            [ 'key' => 'field_badge',        'label' => 'Badge',              'name' => 'property_badge',        'type' => 'text',      'instructions' => 'e.g. Villa, Apartment' ],
-            [ 'key' => 'field_featured',     'label' => 'Featured Property',  'name' => 'property_featured',     'type' => 'true_false','ui' => 1 ],
-            [ 'key' => 'field_gallery_1',    'label' => 'Gallery Image 1',    'name' => 'property_gallery_1',    'type' => 'image', 'return_format' => 'array', 'preview_size' => 'medium', 'instructions' => 'Main gallery image' ],
-            [ 'key' => 'field_gallery_2',    'label' => 'Gallery Image 2',    'name' => 'property_gallery_2',    'type' => 'image', 'return_format' => 'array', 'preview_size' => 'medium' ],
-            [ 'key' => 'field_gallery_3',    'label' => 'Gallery Image 3',    'name' => 'property_gallery_3',    'type' => 'image', 'return_format' => 'array', 'preview_size' => 'medium' ],
-            [ 'key' => 'field_gallery_4',    'label' => 'Gallery Image 4',    'name' => 'property_gallery_4',    'type' => 'image', 'return_format' => 'array', 'preview_size' => 'medium' ],
-            [ 'key' => 'field_key_features', 'label' => 'Key Features',       'name' => 'property_key_features', 'type' => 'textarea',  'instructions' => 'One feature per line' ],
-            [ 'key' => 'field_hoa',          'label' => 'HOA Fees',           'name' => 'property_hoa',          'type' => 'text' ],
-            [ 'key' => 'field_prop_tax',     'label' => 'Annual Property Tax','name' => 'property_tax',          'type' => 'text' ],
-            [ 'key' => 'field_monthly_maint','label' => 'Monthly Maintenance','name' => 'property_maintenance',  'type' => 'text' ],
+            [
+                'key'          => 'field_price',
+                'label'        => 'Price',
+                'name'         => 'property_price',
+                'type'         => 'text',
+                'instructions' => 'e.g. $1,280,000',
+            ],
+            [
+                'key'   => 'field_location',
+                'label' => 'Location',
+                'name'  => 'property_location_text',
+                'type'  => 'text',
+            ],
+            [
+                'key'   => 'field_bedrooms',
+                'label' => 'Bedrooms',
+                'name'  => 'property_bedrooms',
+                'type'  => 'number',
+            ],
+            [
+                'key'   => 'field_bathrooms',
+                'label' => 'Bathrooms',
+                'name'  => 'property_bathrooms',
+                'type'  => 'number',
+            ],
+            [
+                'key'   => 'field_area',
+                'label' => 'Area (Sq Ft)',
+                'name'  => 'property_area',
+                'type'  => 'text',
+            ],
+            [
+                'key'          => 'field_badge',
+                'label'        => 'Badge',
+                'name'         => 'property_badge',
+                'type'         => 'text',
+                'instructions' => 'e.g. Villa, Apartment',
+            ],
+            [
+                'key'   => 'field_featured',
+                'label' => 'Featured Property',
+                'name'  => 'property_featured',
+                'type'  => 'true_false',
+                'ui'    => 1,
+            ],
+            [
+                'key'          => 'field_gallery_1',
+                'label'        => 'Gallery Image 1',
+                'name'         => 'property_gallery_1',
+                'type'         => 'image',
+                'return_format' => 'array',
+                'preview_size' => 'medium',
+                'instructions' => 'Main gallery image',
+            ],
+            [
+                'key'           => 'field_gallery_2',
+                'label'         => 'Gallery Image 2',
+                'name'          => 'property_gallery_2',
+                'type'          => 'image',
+                'return_format' => 'array',
+                'preview_size'  => 'medium',
+            ],
+            [
+                'key'           => 'field_gallery_3',
+                'label'         => 'Gallery Image 3',
+                'name'          => 'property_gallery_3',
+                'type'          => 'image',
+                'return_format' => 'array',
+                'preview_size'  => 'medium',
+            ],
+            [
+                'key'           => 'field_gallery_4',
+                'label'         => 'Gallery Image 4',
+                'name'          => 'property_gallery_4',
+                'type'          => 'image',
+                'return_format' => 'array',
+                'preview_size'  => 'medium',
+            ],
+            [
+                'key'          => 'field_key_features',
+                'label'        => 'Key Features',
+                'name'         => 'property_key_features',
+                'type'         => 'textarea',
+                'instructions' => 'One feature per line',
+            ],
+            [
+                'key'   => 'field_hoa',
+                'label' => 'HOA Fees',
+                'name'  => 'property_hoa',
+                'type'  => 'text',
+            ],
+            [
+                'key'   => 'field_prop_tax',
+                'label' => 'Annual Property Tax',
+                'name'  => 'property_tax',
+                'type'  => 'text',
+            ],
+            [
+                'key'   => 'field_monthly_maint',
+                'label' => 'Monthly Maintenance',
+                'name'  => 'property_maintenance',
+                'type'  => 'text',
+            ],
         ],
         'location' => [ [ [ 'param' => 'post_type', 'operator' => '==', 'value' => 'property' ] ] ],
     ] );
@@ -166,9 +254,24 @@ function estatein_acf_fields() {
         'key'    => 'group_team',
         'title'  => 'Team Member Details',
         'fields' => [
-            [ 'key' => 'field_team_role',     'label' => 'Job Title',    'name' => 'team_role',     'type' => 'text' ],
-            [ 'key' => 'field_team_email',    'label' => 'Email Address', 'name' => 'team_email',   'type' => 'email' ],
-            [ 'key' => 'field_team_linkedin', 'label' => 'LinkedIn URL', 'name' => 'team_linkedin', 'type' => 'url' ],
+            [
+                'key'   => 'field_team_role',
+                'label' => 'Job Title',
+                'name'  => 'team_role',
+                'type'  => 'text',
+            ],
+            [
+                'key'   => 'field_team_email',
+                'label' => 'Email Address',
+                'name'  => 'team_email',
+                'type'  => 'email',
+            ],
+            [
+                'key'   => 'field_team_linkedin',
+                'label' => 'LinkedIn URL',
+                'name'  => 'team_linkedin',
+                'type'  => 'url',
+            ],
         ],
         'location' => [ [ [ 'param' => 'post_type', 'operator' => '==', 'value' => 'team_member' ] ] ],
     ] );
@@ -178,10 +281,34 @@ function estatein_acf_fields() {
         'key'    => 'group_testimonial',
         'title'  => 'Testimonial Details',
         'fields' => [
-            [ 'key' => 'field_t_author',   'label' => 'Author Name',     'name' => 'testimonial_author',   'type' => 'text' ],
-            [ 'key' => 'field_t_location', 'label' => 'Author Location', 'name' => 'testimonial_location', 'type' => 'text' ],
-            [ 'key' => 'field_t_rating',   'label' => 'Rating (1–5)',    'name' => 'testimonial_rating',   'type' => 'number', 'min' => 1, 'max' => 5, 'default_value' => 5 ],
-            [ 'key' => 'field_t_avatar',   'label' => 'Author Photo',    'name' => 'testimonial_avatar',   'type' => 'image', 'return_format' => 'url' ],
+            [
+                'key'   => 'field_t_author',
+                'label' => 'Author Name',
+                'name'  => 'testimonial_author',
+                'type'  => 'text',
+            ],
+            [
+                'key'   => 'field_t_location',
+                'label' => 'Author Location',
+                'name'  => 'testimonial_location',
+                'type'  => 'text',
+            ],
+            [
+                'key'           => 'field_t_rating',
+                'label'         => 'Rating (1-5)',
+                'name'          => 'testimonial_rating',
+                'type'          => 'number',
+                'min'           => 1,
+                'max'           => 5,
+                'default_value' => 5,
+            ],
+            [
+                'key'           => 'field_t_avatar',
+                'label'         => 'Author Photo',
+                'name'          => 'testimonial_avatar',
+                'type'          => 'image',
+                'return_format' => 'url',
+            ],
         ],
         'location' => [ [ [ 'param' => 'post_type', 'operator' => '==', 'value' => 'testimonial' ] ] ],
     ] );
@@ -219,7 +346,7 @@ function estatein_stars( $rating = 5 ) {
  * Logo SVG markup.
  */
 function estatein_logo_svg() {
-    return '<img src="http://growmodo.local/wp-content/uploads/2026/04/Logo.png" alt="Estatein Logo" style="height:36px;width:auto;">';
+    return '<img src="' . esc_url( content_url( 'uploads/2026/04/Logo.png' ) ) . '" alt="Estatein Logo" style="height:36px;width:auto;">';
 }
 
 /**

@@ -29,7 +29,7 @@ get_header();
             <!-- Stats -->
             <div class="stats-bar">
                 <div class="stat-item">
-                    <div class="stat-number">200+</div>
+                    <div class="stat-number">450+</div>
                     <div class="stat-label">Happy Customers</div>
                 </div>
                 <div class="stat-item">
